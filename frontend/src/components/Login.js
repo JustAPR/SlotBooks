@@ -32,6 +32,7 @@ const Login = () => {
   };
 
   return (
+    <div style={styles.cond}>
     <div style={styles.card}>
       <div>
         <h1 style={styles.cardTitle}>Book Your Parking Slot Easily</h1>
@@ -69,11 +70,23 @@ const Login = () => {
 
       <button onClick={handleRegister} style={styles.registerButton}>Register</button>
     </div>
+    </div>
   );
 };
 
 // Inline styles from login.html
 const styles = {
+  cond: {
+    margin: 0,
+    padding: 0,
+    minHeight: '100vh',
+    fontFamily: 'Arial, sans-serif',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    background: "url('https://res.cloudinary.com/dsgmd2mwq/image/upload/v1724679727/9000_y6drzb.jpg') no-repeat center center fixed",
+    backgroundSize: 'cover',
+  },
   card: {
     backgroundColor: 'rgba(255, 255, 255, 0.9)',
     padding: '4rem',
