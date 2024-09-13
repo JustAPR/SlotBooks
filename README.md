@@ -15,6 +15,7 @@ To deploy this project run
   npm install
   node server.js
 ```
+New terminal in same dir
 ```bash
   cd frontend
   npm install
